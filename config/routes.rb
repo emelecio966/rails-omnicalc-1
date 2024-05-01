@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do 
   get("/square/new", { :controller => "calc", :action => "square_new" }) 
 
   get("/square/root", { :controller => "calc", :action => "square_root" })
