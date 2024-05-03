@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 
   get("/square_new/results", { :controller => "calc", :action => "new_square" }) 
 
-  get("/", { :controller => "calc", :action => "home" }) 
+  get("/home", { :controller => "calc", :action => "home" }) 
 end

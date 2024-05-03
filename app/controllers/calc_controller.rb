@@ -1,6 +1,6 @@
-class CalcController < AppplicationController 
+class  CalcController < ApplicationController 
   def square_new 
-     render({ :template => "calc_templates/square_new" }) 
+    render({ :template => "calc_templates/new_square" })
   end 
 
   def square_root 
@@ -45,5 +45,9 @@ class CalcController < AppplicationController
     @the_result = @the_num **2 
 
     render({ :template => "calc_template/square_new_results" })
+  end 
+
+  def home 
+    render({ :template => "calc_template/home" }) 
   end 
 end 
