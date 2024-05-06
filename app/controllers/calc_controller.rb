@@ -1,17 +1,17 @@
 class  CalcController < ApplicationController 
-  def square_new 
-    render({ :template => "calc_templates/new_square" })
+  def square
+    render({ :template => "calc_templates/square_form" })
   end 
 
   def square_root 
-    render({ :template => "calc_templates/square_root" })
+    render({ :template => "calc_templates/square_root_form" })
   end 
 
-  def new_payment 
-   render({ :template => "calc_templates/new_payment" })
+  def payment 
+   render({ :template => "calc_templates/payment_form" })
   end  
 
-  def new_random 
+  def random 
    render({ :template => "calc_templates/new_random" })
   end
 
@@ -44,7 +44,7 @@ class  CalcController < ApplicationController
 
     @the_result = @the_num **2 
 
-    render({ :template => "calc_template/square_new_results" })
+    render({ :template => "calc_template/square_results" })
   end 
 
   def home 
