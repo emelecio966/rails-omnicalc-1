@@ -39,7 +39,7 @@ class  CalcController < ApplicationController
     render({ :template => "calc_template/payment_results" })
   end
 
-  def square_new_results 
+  def square_results 
     @the_num = params.fetch("users_number").to_f
 
     @the_result = @the_num **2 
@@ -47,6 +47,10 @@ class  CalcController < ApplicationController
     render({ :template => "calc_template/square_results" })
   end 
 
+  def random_results
+    render({ :template => "calc_template/random_results" }) 
+  end 
+  
   def home 
     render({ :template => "calc_template/home" }) 
   end 
