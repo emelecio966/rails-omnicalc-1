@@ -4,7 +4,6 @@ class  CalcController < ApplicationController
   end 
 
   def square_root 
-   
     render({ :template => "calc_templates/square_root_form" })
   end 
 
@@ -49,7 +48,7 @@ class  CalcController < ApplicationController
     render({ :template => "calc_template/random_results" }) 
   end 
   
-  def home 
-    render({ :template => "calc_template/home" }) 
+  def layout 
+    render({ :template => "calc_template/layout" }) 
   end 
 end 

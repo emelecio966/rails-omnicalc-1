@@ -1,11 +1,13 @@
-<!-- /views/new_sq_calc.erb --> 
+<form action="/square_new/results" method="get">
 
-<h1> Calculate the square of a number</h1> 
+    <div>
+     <label for="square_results"> Enter a number: </label> 
 
-<form action="/square_new/results">
-   <div>
-     <label for="giraffe"> Enter a number: </label> 
-
-     <input id="giraffe" type="text" name="users_number"> 
+     <input id="square_results" type="text" name="users_number"> 
    </div>
 <button>Calculate Square </button> 
+</form> 
+<form action="/square_new/results" method="get"> 
+
+  <div>
+    <label for="square_results"> Enter a number: </label>
